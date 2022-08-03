@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Clínica de estética</title>
+	<meta charset = "utf-8">
+	<link rel="stylesheet" href="css\estilo.css">
+</head>
+<body>
+
+	<header>
+		<div class="flex" id="navegaçao">
+			<div id="instagram">
+				<a href="https://www.instagram.com/regilanegrigolo/" target="_blank" > <img src="img/icone-instagram.png" alt="Logotipo do Instagram"> </a>
+			</div>
+
+			<div class="flex icone">
+				<a href="https://boaforma.abril.com.br/beleza/10-segredos-da-pele-perfeita/" target="_blank" > <img src="img/icone-dicas.png" alt="Ìcone para acessar as dicas"> </a>
+				<p>Mais algumas dicas</p>
+			</div>
+
+			<div class="flex icone">
+				<a href="produtos.html"> <img src="img/icone-produtos.png" alt="Ìcone para acessar produtos estéticos"> </a>
+				<div><p>Compre e cadastre produtos</p></div>
+			</div>
+
+			<div class="flex icone">
+				<a href="consultas.html"> <img src="img/icone-calendário.png" alt="Ìcone de calendário para marcar consulta"> </a>
+				<div><p>Consultas</p></div>
+			</div>
+		</div>
+
+		<div>
+			<a href="index.html" > <img src="img/cartão de visita.png" alt="Imagem do cartão de visita"> </a>
+		</div>
+	</header>
+
+	<div class ="fixo">
+		<a href="https://www.instagram.com/regilanegrigolo/" target="_blank" > <img src="img/icone-instagram.png" alt="Logotipo do Instagram"> </a>
+		<a href="https://api.whatsapp.com/send?phone=5542991194696" target="_blank" > <img src="img/icone-whatsapp rosa.png" alt="Logotipo do Whatsapp"> </a>
+	</div>
+
+	<section>
+		<h1>Cadastre um produto estético</h1>
+
+		<div class="container-informaçoes">
+			<h2>Nome</h2>
+			<input id="nomeP" class= "formulário" type="text" size="110">
+		</div>
+
+		<div class="container-informaçoes">
+			<h2>Categoria</h2>
+			<input id="categoriaP" class= "formulário" type="text" size="110">
+		</div>
+
+		<div class="container-informaçoes">
+			<h2>Valor</h2>
+			<input id="valorP" class= "formulário" type="text" size="110">
+		</div>
+
+		<p> <button onclick="cadastrar()">Cadastrar</button> </p>
+
+	</section>
+
+	<section id="divisao">
+		<h1>Encontre um produto estético</h1>
+
+		<div class="container-informaçoes">
+			<h2>Categoria</h2>
+			<input id='tipo' class= "formulário" type="text" size="110">
+		</div>
+
+		<p><button onclick="buscar(tipo.value)">Buscar</button></p>
+
+		<p class="inv" id="resultado"></p>
+
+	</section>
+
+	<footer class="flex">
+		<div>
+			<div class="flex linha">
+				<div id = "container-img-telefone" class="container-img flex">
+					<img src="img/icone-telefone.png" alt="Ìcone do telefone">
+				</div>
+				<a id="link-telefone" href="tell:+556734531694" target="_blank" >(67) 3453-1694</a>
+			</div>
+	
+			<div class="flex linha">
+				<div id = "container-img-whatsapp" class="container-img flex">
+					<img src="img/icone-whatsapp.png" alt="Logotipo do Whatsapp">
+				</div>
+				<a id="link-whatsapp" href="https://api.whatsapp.com/send?phone=5542991194696" target="_blank" >(42) 99119-4696</a>
+			</div>
+			<div class="flex linha">			
+				<div id = "container-img-email" class="container-img flex">
+					<img src="img/icone-email.png" alt="Ìcone do e-mail">
+				</div>
+				<a id="link-email" href="mailto:regrigolomed@gmail.com" target="_blank" >regrigolomed@gmail.com</a>
+			</div>
+			<div class="flex linha">
+				<div id = "container-img-localizaçao" class="container-img flex">
+					<img src="img/icone-localizaçao.png" alt="Ìcone da localização">
+				</div>
+				<a id="link-localizaçao" href="http://maps.google.com/?q=Rua+XV+de+Novembro,+431+-+Centro,+Caarapó+-+MS" target="_blank" >Rua XV de Novembro, 431 - Centro / Caarapó - MS</a>
+			</div>
+		</div>
+		
+		<div class="flex logo">
+			<img src="img/logo-clínica.png" alt="Logotipo da Clínica">
+		</div>
+	</footer>
+
+<script type="text/javascript" src="avaliação3.js"></script>
+
+</body>
+</html>
